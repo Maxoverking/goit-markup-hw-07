@@ -21,9 +21,9 @@
     
     <header class="header"> 
         <div class="container ">
-            <div class="header__block">
+            <div class="header__inner">
                 <nav class="header__nav">
-                    <a href="./index.html" class="header__logo">Web<span class="black">Studio</span></a>
+                    <a href="./index.html" class="logo">Web<span class="black--text">Studio</span></a>
                     <ul class="header__nav__list">
                         <li class="header__nav__item">
                             
@@ -370,49 +370,48 @@
             
     </main>
     <!--Футер-->
-    <footer class="footer-grey">
+    <footer class="footer">
         <div class="container">
-            <section class="footer-all">
-
-                <div class="footer-logo">
-                    <a href="./index.html" class="logos">Web<span class="white">Studio</span></a>
+            <section class="footer__inner">
+                <div>
+                    <a href="./index.html" class="logo footer__logo">Web<span class="white--text">Studio</span></a>
                 
-                    <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+                    <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
                     
-                    <ul class="basic-linck-footer">
-                        <li><a class="linck-footer" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a class="linck-footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <ul class="footer__list">
+                        <li><a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="footer__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
                     </ul>
                 </div>
             
-                <div class="social-link-icon">
-                    <h3 class="social-link">Присоединяйтесь</h3>
+                <div class="footer--icon">
+                    <h3 class="footer__title  information__title">Присоединяйтесь</h3>
                         
-                        <ul class="footer-link-icon">
-                            <li class="team-icon">
-                                <a href="#" class="links-foo">
-                                    <svg class="team-social-link" width="20" height="20">
+                        <ul class="footer__icon__list team__icon">
+                            <li >
+                                <a href="#" class="footer__link__icon team__link">
+                                    <svg >
                                         <use href="./images/icon/icons.svg#icon-instagram-2"></use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="team-icon">
-                                <a href="#" class="links-foo">
-                                    <svg class="team-social-link" width="20" height="20">
+                            <li >
+                                <a href="#" class="footer__link__icon team__link">
+                                    <svg >
                                         <use href="./images/icon/icons.svg#icon-twitter-1"></use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="team-icon">
-                                <a href="#" class="links-foo">
-                                    <svg class="team-social-link" width="20" height="20">
+                            <li >
+                                <a href="#" class="footer__link__icon team__link">
+                                    <svg >
                                         <use href="./images/icon/icons.svg#icon-facebook-1"></use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="team-icon">
-                                <a href="#" class="links-foo">
-                                    <svg class="team-social-link" width="20" height="20">
+                            <li >
+                                <a href="#" class="footer__link__icon  team__link">
+                                    <svg>
                                         <use href="./images/icon/icons.svg#icon-linkedin-1"></use>
                                     </svg>
                     
@@ -420,14 +419,16 @@
                             </li>
                         
                 </div>
-                <div class="mail">
-                    <h3 class="social-link">Подпишитесь на рассылку</h3>
+                <div class="footer-mail">
+                    <h3 class="footer__title information__title ">Подпишитесь на рассылку</h3>
+
                         <form class="footer-form"> 
                             <label >
-                            <input class="footer-mail" type="email" name="mail" placeholder="E-mail" >
+                            <input class="footer__input" type="email" name="mail" placeholder="E-mail" >
                             </label>
-                            <button class="footer-button" type="submit"><span class="footer-singt">Подписаться</span> 
-                                <svg class="footer-fly">
+                            
+                            <button class="footer__button button " type="submit">Подписаться 
+                                <svg class="footer__button__icon">
                                     <use href="./images/icon/icons.svg#icon-send-1"></use>
                                 </svg>
                             </button> 
@@ -441,70 +442,70 @@
         
     </footer> 
     <!-- Модалка --> 
-        <div class="overlay is-hidden" data-modal >
+        <div class="overlay is-hidden " data-modal >
             <div class="modal"  >
-                <button type="button" class="modal-button" data-modal-close>
+                <button type="button" class="modal__button__close" data-modal-close>
                     <svg class="modal-button-icon" width="11" height="11">
                         <use class="close-icon" href="./images/icon/icons.svg#icon-Vector1"></use>
                     </svg>
                 </button>
                 <div class="modal-form">
-                    <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+                    <h2 class="subtitle modal__title">Оставьте свои данные, мы вам перезвоним</h2>
 
-                        <form class="modal-box-form">
+                        <form>
                             <fieldset>
-                                <label class="modal-box" for="user-name">Имя</label>
-                                <div class="input-cont">
-                                    <input class="field " type="text" name="user-name" id="user-name" />
-                                    <svg class="modal-icon" aria-hidden="true">
+                                <label class="modal__label" for="user-name">Имя</label>
+                                <div class="modal__input__wrap">
+                                    <input class="modal__input " type="text" name="user-name" id="user-name" />
+                                    <svg class="modal__icon">
                                         <use href="./images/icon/icons.svg#icon-name"></use>
                                     </svg>
                                 </div>
                                 
-                                <label class="modal-box" for="user-phone">Телефон</label>
-                                <div class="input-cont">
-                                    <input class="field" type="tel" name="phone" id="user-phone" />
-                                    <svg class="modal-icon small">
+                                <label class="modal__label" for="user-phone">Телефон</label>
+                                <div class="modal__input__wrap">
+                                    <input class="modal__input" type="tel" name="phone" id="user-phone" />
+                                    <svg class="modal__icon small">
                                         <use href="./images/icon/icons.svg#icon-phone"></use>
                                     </svg>
                                 </div>
                                 
-                                <label class="modal-box" for="user-mail">Почта</label>
-                                <div class="input-cont">
-                                    <input class="field" type="email" name="email" id="user-mail" autocomplete="off" />
-                                    <svg class="modal-icon ">
+                                <label class="modal__label" for="user-mail">Почта</label>
+                                <div class="modal__input__wrap">
+                                    <input class="modal__input" type="email" name="email" id="user-mail" autocomplete="off" />
+                                    <svg class="modal__icon ">
                                         <use href="./images/icon/icons.svg#icon-mail"></use>
                                     </svg>
                                 </div>
                             </fieldset>
                             
                             <fieldset>
-                                <label class="modal-box " for="feedback">Комментарий</label>
+                                <label class="modal__label " for="feedback">Комментарий</label>
                                 <textarea 
-                                class="coment" 
+                                class="modal__coment" 
                                 id="feedback" 
                                 name="feedback" 
                                 rows="50" 
                                 placeholder="Введите текст"></textarea>
                             </fieldset>
                             
-                            <div class="modal-box area " >
-                                <label class="terms" for="check">
-                                <div class="tab">
+                            <div class="modal-checkbox" >
+                                <label class="modal__checkbox__label" for="check">
+                                <div class="modal-checkbox__wrap">
 
-                                    <input class="checkbox" type="checkbox" name="terms" id="check">
+                                    <input class="modal__checkbox__input" type="checkbox" name="terms" id="check">
                                     <span class="fakeframe"></span>
-                                    <svg class="fakecheck">
+                                    <svg class="fakeicon">
                                         <use href="./images/icon/icons.svg#icon-check"></use>
                                     </svg>
                                 </div>                           
                             Соглашаюсь с рассылкой и принимаю</label>
                             
-                            <a class="modal-terms" href="#">Условия договора</a>   
+                            <a class="modal__checkbox__link" href="#">Условия договора</a>   
                             
                             </div>
                             
-                            <button class="button submittt" type="submit">Отправить</button>
+                            <button class="button modal__button__send " type="submit">Отправить</button>
                         </form>
                 </div>
             </div>
