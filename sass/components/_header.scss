@@ -1,96 +1,93 @@
+
 .header {
     padding: 24px 0px;
     width: 100%;
-    background-color: var(--white-color);
+    background-color: getColor('white-color');
+
+    &__inner {
+        @extend %dis-flex__al-it;
+        }
+    
+    &__nav {
+        @extend %dis-flex__al-it;
+    }
+
+    &__contact {
+        display: flex;
+        justify-content: flex-end;
+
+        margin: 0%;
+        padding: 4px 0px;
+        margin-left: auto;
+        gap: 50px;
+
+        // & li:not(:last-child) {
+        //         margin-right: 50px;
+        //     }
+    }
 }
 
-.header__inner {
-    display: flex;
-    align-items: center;
-}
-
-.header__nav {
-    display: flex;
-    align-items: center;
-}
-
-.nav__list {
+.nav {
     display: flex;
     padding-left: 0%;
     margin: 0%;
+
+    &__item {
+        position: relative;
+        margin: 4px 25px;
+    }
+
+    &__link {
+        color: getColor('black-color');
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: getColor('blue-color');
+        }
+
+        &.current {
+            color: getColor('blue-color');
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &--color-grey {
+            @extend %dis-flex__al-it;
+        }
+
+        &--color-grey {
+            color: getColor('basic-text-color');
+        }
+    }
 }
 
-.nav__item {
-    position: relative;
-    margin: 4px 25px;
-}
-
-.header-line .header__link.current::after {
+.header-line .nav__link.current::after {
     position: absolute;
     content: "";
     top: 44px;
     left: 0;
     width: 100%;
     height: 4px;
-    background-color: var(--blue-color);
+    background-color: getColor('blue-color');
     border-radius: 2px;
 }
 
-.header__link {
-    color: var(--black-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header__link:hover,
-.header__link:focus,
-.header__link:active {
-    color: var(--blue-color);
-}
-
-.header__link.current {
-    color: var(--blue-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header__list {
-    display: flex;
-    justify-content: flex-end;
-
-    margin: 0%;
-    padding: 4px 0px;
-    margin-left: auto;
-}
-
-.header__list li:not(:last-child) {
-    margin-right: 50px;
-}
-
 /*  Конверт и телефон */
-.header__link--grey {
-    display: flex;
-    align-items: center;
-}
-
-.header__link--grey {
-    color: var(--basic-text-color);
-}
-
-.smartphone,
-.envelope {
+.icon--smartphone,
+.icon--envelope {
     margin-right: 10px;
     fill: currentColor;
 }
-
-.envelope {
+.icon--envelope {
     width: 16px;
     height: 12px;
 }
-
-.smartphone {
+.icon--smartphone {
     width: 10px;
     height: 16px;
 }

@@ -1,34 +1,36 @@
+// Хедер
 .logo {
-    color: var(--blue-color);
+    color: getColor('blue-color');
     font-family: "Raleway";
     font-size: 26px;
     margin-right: 92px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    & .black--text:hover,
+    & .black--text:focus,
+    & .black--text:active {
+        color: getColor('blue-color');
+    }
 }
 
 .black--text {
-    color: var(--black-color);
+    color: getColor('black-color');
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.logo .black--text:hover,
-.logo .black--text:focus,
-.logo .black--text:active {
-    color: var(--blue-color);
 }
 
 // Футер
 .footer__logo {
     margin-right: 88px;
+
+    & .white--text:hover,
+    & .white--text:focus,
+    & .white--text:active {
+        color: getColor('blue-color');
+    }
 }
 
 .white--text {
-    color: var(--white-color);
+    color: getColor('white-color');
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__logo .white--text:hover,
-.footer__logo .white--text:focus,
-.footer__logo .white--text:active {
-    color: var(--blue-color);
-}

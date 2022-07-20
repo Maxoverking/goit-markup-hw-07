@@ -1,58 +1,41 @@
 .footer {
-    background-color: var(--section-order-service);
+    background-color: getColor('section-order-service');
     padding: 60px 0px;
-}
 
-.footer__inner {
-    display: inline-flex;
-    align-items: baseline;
-}
+    &__inner {
+        display: inline-flex;
+        align-items: baseline;
+    }
 
-.footer__address {
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
+    &__address {
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
 
-    margin: 20px 0px 9px;
-    color: var(--white-color);
-}
+        margin: 20px 0px 9px;
+        color: getColor('white-color');
+    }
 
-.footer__list {
-    padding-left: 0px;
-    margin: 0px;
-}
+    &__list {
+        padding-left: 0px;
+        margin: 0px;
+    }
 
-.footer__list .footer__link {
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
+    &__link {
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
 
-    color: rgba(255, 255, 255, 0.6);
-}
+        color: rgba(255, 255, 255, 0.6);
+    }
 
-.footer__list li:not(:last-child) {
-    margin-bottom: 6px;
-}
-
-/* Иконки футера */
-
-.footer--icon {
-    margin-left: 76px;
-}
-
-.footer--title--color {
-    color: var(--white-color);
-    margin: 0px 0px 20px;
-}
-
-.footer--icon--background {
-    background-color: rgba(255, 255, 255, 0.1);
-    fill: var(--white-color);
+    &__list li:not(:last-child) {
+        margin-bottom: 6px;
+    }
 }
 
 /* Подписаться */
-
 .footer-subscribe {
     margin-left: 92px;
 }
@@ -66,16 +49,33 @@
     height: 50px;
     padding: 0px 16px;
 
-    color: var(--white-color);
-    background: var(--section-order-service);
+    color: getColor('white-color');
+    background: getColor('section-order-service');
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
     border-radius: 4px;
     letter-spacing: 0.03em;
     /* outline: 1px solid red; */
+
+    & ::placeholder {
+            color: getColor('placeholder-color');
+        }
 }
 
-.footer__input::placeholder {
-    color: var(--placeholder-color);
+/* Иконки футера */
+
+.footer--icon {
+    margin-left: 76px;
 }
+
+.footer--title--color {
+    color: getColor('white-color');
+    margin: 0px 0px 20px;
+}
+
+.footer--icon--background {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: getColor('white-color');
+}
+

@@ -1,6 +1,6 @@
 body {
-    background-color: var(--white-color);
-    color: var(--basic-text-color);
+    background-color: getColor('white-color');
+    color: getColor('basic-text-color');
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -40,7 +40,7 @@ img {
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--black-color);
+    color: getColor('black-color');
     margin-bottom: 50px;
     margin-top: 0px;
 }
