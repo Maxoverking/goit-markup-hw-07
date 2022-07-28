@@ -1,46 +1,46 @@
 body {
-    background-color: getColor('white-color');
-    color: getColor('basic-text-color');
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    margin: auto;
+  background-color: getColor("white-color");
+  color: getColor("basic-text-color");
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: auto;
 }
 
 .container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    /* outline: 1px solid red; */
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid red;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .section {
-    padding: 94px 0px;
+  padding: 94px 0px;
 }
 
 .subtitle {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: getColor('black-color');
-    margin-bottom: 50px;
-    margin-top: 0px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: getColor("black-color");
+  margin-bottom: 50px;
+  margin-top: 0px;
 }

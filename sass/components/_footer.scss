@@ -1,81 +1,80 @@
 .footer {
-    background-color: getColor('section-order-service');
-    padding: 60px 0px;
+  background-color: getColor("section-order-service");
+  padding: 60px 0px;
 
-    &__inner {
-        display: inline-flex;
-        align-items: baseline;
-    }
+  &__inner {
+    display: flex;
+    align-items: baseline;
+  }
 
-    &__address {
-        font-style: normal;
-        font-size: 14px;
-        line-height: 1.714;
-        letter-spacing: 0.03em;
+  &__address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
 
-        margin: 20px 0px 9px;
-        color: getColor('white-color');
-    }
+    margin: 20px 0px 9px;
+    color: getColor("white-color");
+  }
 
-    &__list {
-        padding-left: 0px;
-        margin: 0px;
-    }
+  &__list {
+    padding-left: 0px;
+    margin: 0px;
+  }
 
-    &__link {
-        font-size: 14px;
-        line-height: 1.714;
-        letter-spacing: 0.03em;
+  &__link {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
 
-        color: rgba(255, 255, 255, 0.6);
-    }
+    color: rgba(255, 255, 255, 0.6);
+  }
 
-    &__list li:not(:last-child) {
-        margin-bottom: 6px;
-    }
+  &__list li:not(:last-child) {
+    margin-bottom: 6px;
+  }
 }
 
 /* Подписаться */
 .footer-subscribe {
-    margin-left: 92px;
+  margin-left: 92px;
 }
 
 .footer-form {
-    display: inline-flex;
+  display: flex;
 }
 
 .footer__input {
-    width: 358px;
-    height: 50px;
-    padding: 0px 16px;
+  width: 358px;
+  height: 50px;
+  padding: 0px 16px;
 
-    color: getColor('white-color');
-    background: getColor('section-order-service');
+  color: getColor("white-color");
+  background: getColor("section-order-service");
 
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
-    border-radius: 4px;
-    letter-spacing: 0.03em;
-    /* outline: 1px solid red; */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+  /* outline: 1px solid red; */
 
-    & ::placeholder {
-            color: getColor('placeholder-color');
-        }
+  & ::placeholder {
+    color: getColor("placeholder-color");
+  }
 }
 
 /* Иконки футера */
 
 .footer--icon {
-    margin-left: 76px;
+  margin-left: 76px;
 }
 
 .footer--title--color {
-    color: getColor('white-color');
-    margin: 0px 0px 20px;
+  color: getColor("white-color");
+  margin: 0px 0px 20px;
 }
 
 .footer--icon--background {
-    background-color: rgba(255, 255, 255, 0.1);
-    fill: getColor('white-color');
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: getColor("white-color");
 }
-

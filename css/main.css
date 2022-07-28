@@ -9,12 +9,12 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 a {
@@ -104,7 +104,7 @@ img {
 
 .footer__button--icon {
   position: absolute;
-  width: 24px;
+  max-width: 24px;
   height: 24px;
   top: 50%;
   right: 30px;
@@ -275,12 +275,12 @@ img {
 }
 
 .icon--envelope {
-  width: 16px;
+  max-width: 16px;
   height: 12px;
 }
 
 .icon--smartphone {
-  width: 10px;
+  max-width: 10px;
   height: 16px;
 }
 
@@ -326,7 +326,7 @@ img {
   display: block;
   content: " ";
   background-color: #f5f4fa;
-  width: 270px;
+  max-width: 270px;
   height: 120px;
   background-size: 70px;
   background-repeat: no-repeat;
@@ -446,9 +446,9 @@ img {
 }
 
 .team__icon {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -468,6 +468,7 @@ img {
           align-items: center;
   width: 44px;
   height: 44px;
+  gap: 10px;
   border-radius: 50%;
   background-color: #ffffff;
   fill: currentColor;
@@ -480,7 +481,7 @@ img {
   fill: #ffffff;
 }
 .team__icon svg {
-  width: 20px;
+  max-width: 20px;
   height: 20px;
 }
 
@@ -517,8 +518,8 @@ img {
   fill: #2196f3;
 }
 .clients__link svg {
-  width: 106px;
-  height: 60px;
+  max-width: 106px;
+  max-height: 60px;
 }
 
 .project {
@@ -612,9 +613,9 @@ img {
   padding: 60px 0px;
 }
 .footer__inner {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -647,9 +648,9 @@ img {
 }
 
 .footer-form {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer__input {
